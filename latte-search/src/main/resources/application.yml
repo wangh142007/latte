@@ -1,0 +1,20 @@
+server:
+  port: 8033
+
+spring:
+  datasource:                                           # 数据源的相关配置
+    type: com.zaxxer.hikari.HikariDataSource          # 数据源类型：HikariCP
+    driver-class-name: com.mysql.jdbc.Driver          # mysql驱动
+    url: jdbc:mysql://39.106.121.113:3306/app?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+
+  redis:
+    database: 0
+    host: 39.106.121.113
+    port: 6379
+
+  data:
+    elasticsearch:
+      cluster-name: es6
+      cluster-nodes: 39.106.121.113:9300
