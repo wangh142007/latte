@@ -7,12 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="latte-sso" />
-        <module name="latte-pojo" />
-        <module name="latte-service" />
-        <module name="latte-api" />
         <module name="latte-mapper" />
-        <module name="latte-search" />
         <module name="latte-common" />
+        <module name="latte-api" />
+        <module name="latte-pojo" />
+        <module name="latte-search" />
+        <module name="latte-service" />
+        <module name="latte-fs" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="latte-api" options="-parameters" />
       <module name="latte-common" options="-parameters" />
+      <module name="latte-fs" options="-parameters" />
       <module name="latte-mapper" options="-parameters" />
       <module name="latte-pojo" options="-parameters" />
       <module name="latte-search" options="-parameters" />
